@@ -1,0 +1,13 @@
+.panel_bagde {
+    background-color: rgba(171, 171, 171, 0.69);
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+
+.panel {
+    background-color: rgba(63, 72, 75, 0.5);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

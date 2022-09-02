@@ -1,0 +1,46 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Stylesheets/Style_04_Inital.uss?fileID=7433441132597879392&amp;guid=6b4f106be7dc41a4f882819743d4693e&amp;type=3#Style_04_Inital" />
+    <Style src="project://database/Assets/Stylesheets/Style_05_Controls.uss?fileID=7433441132597879392&amp;guid=838a38e00f1685b449185027cdff3f66&amp;type=3#Style_05_Controls" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/04_Initial/img/background_blur.jpg?fileID=2800000&amp;guid=942e049bee7a425448e9842f54a13d2b&amp;type=3#background_blur&apos;);">
+        <ui:VisualElement name="TopContainer" style="flex-direction: row; flex-basis: 80%;">
+            <ui:VisualElement name="TopLeft" style="flex-basis: 20%; justify-content: flex-end; margin-right: 10%;">
+                <ui:VisualElement name="PanelMiniFraction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 20px; align-items: center;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/05_Controls/img/placeholder.png?fileID=2800000&amp;guid=73ee5c326bf97a64c88206b2c4824f0a&amp;type=3#placeholder&apos;); width: 80px; height: 80px; -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:VisualElement style="margin-left: 20px;">
+                        <ui:Label tabindex="-1" text="MEUTONS" display-tooltip-when-elided="true" class="text_classic" style="color: rgb(247, 224, 146);" />
+                        <ui:Label tabindex="-1" text="Medieval Era" display-tooltip-when-elided="true" />
+                        <ui:Label tabindex="-1" text="12000 BCE" display-tooltip-when-elided="true" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="TopMiddle" style="flex-basis: 60%; flex-direction: row; align-items: flex-end;">
+                <ui:VisualElement name="PanelFraction" class="panel" style="width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                <ui:VisualElement name="PanelBadges" style="width: 10%; height: 80%; margin-right: 5px;">
+                    <ui:VisualElement class="panel_bagde" style="border-top-right-radius: 20px;" />
+                    <ui:VisualElement class="panel_bagde" />
+                    <ui:VisualElement class="panel_bagde" />
+                    <ui:VisualElement class="panel_bagde" />
+                    <ui:VisualElement class="panel_bagde" />
+                    <ui:VisualElement class="panel_bagde" style="margin-bottom: 0; border-bottom-right-radius: 20px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelList" class="panel" style="width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;" />
+                <ui:VisualElement name="PanelInfo" style="width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    <ui:VisualElement class="panel panel_info" style="margin-bottom: 5px;">
+                        <ui:Label tabindex="-1" text="ERA GOAL" display-tooltip-when-elided="true" class="text_classic" style="-unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="Collect 7 Stars by fulfilling goals related to the Era Stars." display-tooltip-when-elided="true" style="flex-wrap: wrap; white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Button tabindex="-1" text="SHOW CULTURES" display-tooltip-when-elided="true" class="rts_button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel panel_info" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-top: 0; margin-bottom: 5px;">
+                        <ui:Label tabindex="-1" text="COMPETITIVE DEEDS" display-tooltip-when-elided="true" class="text_classic" style="white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="text_classic" />
+                        <ui:Label tabindex="-1" text="DEEDS COMPLETED" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Button tabindex="-1" text="SHOW DEEDS" display-tooltip-when-elided="true" class="rts_button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 20px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-direction: row; flex-basis: 20%;" />
+    </ui:VisualElement>
+</ui:UXML>

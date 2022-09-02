@@ -1,0 +1,107 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="Template_MiddleBadgeUnlocked" src="project://database/Assets/06_Templates/Template_MiddleBadgeUnlocked.uxml?fileID=9197481963319205126&amp;guid=1b029adc5458cd64ea56872dba23110a&amp;type=3#Template_MiddleBadgeUnlocked" />
+    <ui:Template name="Template_MiddleBadgeLocked" src="project://database/Assets/06_Templates/Template_MiddleBadgeLocked.uxml?fileID=9197481963319205126&amp;guid=b8126c232067efe409b677a7b7e2cdc4&amp;type=3#Template_MiddleBadgeLocked" />
+    <Style src="project://database/Assets/Stylesheets/Style_04_Inital.uss?fileID=7433441132597879392&amp;guid=6b4f106be7dc41a4f882819743d4693e&amp;type=3#Style_04_Inital" />
+    <Style src="project://database/Assets/Stylesheets/Style_05_Controls.uss?fileID=7433441132597879392&amp;guid=838a38e00f1685b449185027cdff3f66&amp;type=3#Style_05_Controls" />
+    <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/04_Initial/img/background_blur.jpg?fileID=2800000&amp;guid=942e049bee7a425448e9842f54a13d2b&amp;type=3#background_blur&apos;);">
+        <ui:VisualElement name="TopContainer" style="flex-direction: row; flex-basis: 80%;">
+            <ui:VisualElement name="TopLeft" style="flex-basis: 20%; justify-content: flex-end; margin-right: 10%;">
+                <ui:VisualElement name="PanelMiniFraction" class="panel" style="margin-left: 20px; margin-right: 0; margin-top: 20px; margin-bottom: 20px; padding-top: 10px; padding-bottom: 10px; flex-direction: row; border-top-left-radius: 70px; border-bottom-left-radius: 70px; padding-left: 20px; align-items: center;">
+                    <ui:VisualElement style="background-image: resource(&apos;img/placeholder&apos;); width: 80px; height: 80px; -unity-background-scale-mode: scale-to-fit;" />
+                    <ui:VisualElement style="margin-left: 20px;">
+                        <ui:Label tabindex="-1" text="MEUTONS" display-tooltip-when-elided="true" class="text_classic" style="color: rgb(247, 224, 146);" />
+                        <Section_CustomControls.StarControl stars="6" />
+                        <ui:Label tabindex="-1" text="Medieval Era" display-tooltip-when-elided="true" />
+                        <ui:Label tabindex="-1" text="12000 BCE" display-tooltip-when-elided="true" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-basis: 80%;">
+                    <ui:VisualElement name="Character" style="-unity-background-scale-mode: scale-to-fit; flex-grow: 1;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="TopMiddle" style="flex-basis: 60%; flex-direction: row; align-items: flex-end;">
+                <ui:VisualElement name="PanelFraction" class="panel" style="width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0; -unity-background-scale-mode: scale-and-crop; justify-content: flex-end; align-items: center; padding-bottom: 100px;">
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="FractionName" style="-unity-font-definition: url(&apos;project://database/Assets/05_Controls/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); font-size: 44px; -unity-font-style: bold; color: rgb(247, 224, 146);" />
+                    <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="FractionMotto" style="-unity-font-definition: url(&apos;project://database/Assets/10_SpecialControls/fonts/Tangerine-Regular%20SDF.asset?fileID=11400000&amp;guid=ba41f69a63825154f8a64fe22a7f9e5c&amp;type=2#Tangerine-Regular SDF&apos;); font-size: 34px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelBadges" style="width: 10%; height: 80%; margin-right: 5px;">
+                    <ui:VisualElement class="panel_bagde" style="border-top-right-radius: 20px;">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_bagde">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_bagde">
+                        <ui:Instance template="Template_MiddleBadgeUnlocked" name="Template_MiddleBadgeUnlocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_bagde">
+                        <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_bagde">
+                        <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel_bagde" style="margin-bottom: 0; border-bottom-right-radius: 20px;">
+                        <ui:Instance template="Template_MiddleBadgeLocked" name="Template_MiddleBadgeLocked" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelList" class="panel" style="width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-right: 5px;">
+                    <ui:VisualElement name="PanelListTop" style="height: 25%;" />
+                    <ui:VisualElement name="ListContainer" style="height: 45%;">
+                        <ui:ListView focusable="true" name="List" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="DetailContainer" style="height: 30%; flex-direction: row;">
+                        <ui:VisualElement name="DetailFraction" style="flex-basis: 100%; align-items: center; justify-content: center;">
+                            <ui:VisualElement name="DetailImg" style="width: 64px; height: 64px;" />
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="DetailName" style="-unity-font-definition: url(&apos;project://database/Assets/05_Controls/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); font-size: 34px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Detail_Numbers" style="flex-basis: 100%; justify-content: center; -unity-font-definition: url(&apos;project://database/Assets/05_Controls/fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=c6210e97020309b438c00f4f8d57c61b&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); font-size: 20px;">
+                            <ui:VisualElement style="flex-direction: row; align-items: center;">
+                                <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="DetailsScore" style="-unity-font-definition: none; font-size: 25px; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=74300caa32f48b64cab52f48fbfcdf94&amp;type=3#NotInter-Regular&apos;);" />
+                                <ui:VisualElement name="DetailsScoreImg" style="width: 22px; height: 22px;" />
+                            </ui:VisualElement>
+                            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="DetailsReward" style="-unity-font-definition: none; -unity-font: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=74300caa32f48b64cab52f48fbfcdf94&amp;type=3#NotInter-Regular&apos;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="PanelInfo" style="width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                    <ui:VisualElement class="panel panel_info" style="margin-bottom: 5px;">
+                        <ui:Label tabindex="-1" text="ERA GOAL" display-tooltip-when-elided="true" class="text_classic" style="-unity-text-align: upper-center;" />
+                        <Section_CustomControls.StarControl stars="2" />
+                        <ui:Label tabindex="-1" text="Collect 7 Stars by fulfilling goals related to the Era Stars." display-tooltip-when-elided="true" style="flex-wrap: wrap; white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Button tabindex="-1" text="SHOW CULTURES" display-tooltip-when-elided="true" class="rts_button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel panel_info" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; margin-top: 0; margin-bottom: 5px;">
+                        <ui:Label tabindex="-1" text="COMPETITIVE DEEDS" display-tooltip-when-elided="true" class="text_classic" style="white-space: normal; -unity-text-align: upper-center;" />
+                        <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="text_classic" />
+                        <ui:Label tabindex="-1" text="DEEDS COMPLETED" display-tooltip-when-elided="true" name="Label" />
+                        <ui:Button tabindex="-1" text="SHOW DEEDS" display-tooltip-when-elided="true" class="rts_button" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="panel" style="flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 20px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="BottomContainer" style="flex-direction: row; font-size: 30px; height: 20%;">
+            <ui:VisualElement name="DropdownContainer" style="width: 20%; font-size: 22px; -unity-text-align: upper-center; padding-left: 10px; padding-top: 20px; margin-right: 10%;" />
+            <ui:VisualElement style="width: 50%;" />
+            <ui:VisualElement name="TooltipContainer" style="flex-grow: 1;">
+                <ui:VisualElement style="background-image: url(&apos;project://database/Assets/12_Manipulators/img/StarForCorner.png?fileID=2800000&amp;guid=61cb477413a7aa441aaf0307fb7ba1d9&amp;type=3#StarForCorner&apos;); width: 282px; height: 284px; position: absolute; -unity-background-image-tint-color: rgba(255, 255, 255, 0.19); top: 23px; left: 202px;" />
+                <ui:VisualElement name="Tooltip_1" tooltip="Alert" style="width: 60px; height: 60px; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; position: absolute; top: 135px; left: 312px; background-color: rgba(21, 55, 60, 0.82); align-items: center; justify-content: center;">
+                    <ui:VisualElement style="background-image: url(&apos;project://database/Assets/12_Manipulators/img/icon4.png?fileID=2800000&amp;guid=a196b60c7e40ca84aac5e53b6a47fd47&amp;type=3#icon4&apos;); width: 30px; height: 30px; -unity-background-scale-mode: scale-to-fit; align-items: center; justify-content: center;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="MultiElem" style="flex-direction: row; position: absolute; flex-basis: auto; top: 77px; left: 161px;">
+                    <ui:VisualElement name="Multi_Left" style="flex-basis: auto;">
+                        <ui:VisualElement name="Tooltip_3" tooltip="Rewards" style="width: 40px; height: 50px; border-left-color: rgb(206, 172, 110); border-right-color: rgb(206, 172, 110); border-top-color: rgb(206, 172, 110); border-bottom-color: rgb(206, 172, 110); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 10px; background-color: rgba(37, 69, 66, 0.79); align-items: center; justify-content: center;">
+                            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/12_Manipulators/img/icon3.png?fileID=2800000&amp;guid=46251dd2cefb542458f429d7e6d51a9f&amp;type=3#icon3&apos;); width: 20px; height: 20px; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="Tooltip_4" tooltip="Lights Out" style="width: 40px; height: 50px; border-left-color: rgb(206, 172, 110); border-right-color: rgb(206, 172, 110); border-top-color: rgb(206, 172, 110); border-bottom-color: rgb(206, 172, 110); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-bottom-left-radius: 10px; background-color: rgba(33, 75, 70, 0.79); justify-content: center; align-items: center;">
+                            <ui:VisualElement style="background-image: url(&apos;project://database/Assets/12_Manipulators/img/icon1.png?fileID=2800000&amp;guid=aeaa5d56541e6fd4880a05bf0ef7eb5d&amp;type=3#icon1&apos;); width: 20px; height: 20px; -unity-background-scale-mode: scale-to-fit;" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="Tooltip_2" tooltip="Settings" style="width: 50px; height: 100px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; background-color: rgba(33, 73, 71, 0.75); justify-content: center; align-items: center;">
+                        <ui:VisualElement style="background-image: url(&apos;project://database/Assets/12_Manipulators/img/icon2.png?fileID=2800000&amp;guid=edcac8d11c8fcd04cab565c3502ee3be&amp;type=3#icon2&apos;); width: 30px; height: 30px;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

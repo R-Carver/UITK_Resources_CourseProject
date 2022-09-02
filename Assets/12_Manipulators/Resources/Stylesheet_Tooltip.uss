@@ -1,0 +1,25 @@
+.tooltip_text {
+    color: rgb(219, 172, 22);
+    font-size: 20px;
+}
+
+.tooltip {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgba(13, 19, 60, 0.7);
+    border-left-color: rgb(219, 172, 22);
+    border-right-color: rgb(219, 172, 22);
+    border-top-color: rgb(219, 172, 22);
+    border-bottom-color: rgb(219, 172, 22);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-direction: row;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ListItem" style="flex-direction: row; align-items: center; margin-left: 20px;">
+        <ui:VisualElement name="FractionIcon" style="width: 24px; height: 24px; background-image: resource(&apos;img/fraction_badge2&apos;); margin-right: 15px;" />
+        <ui:Label tabindex="-1" text="Unocon" display-tooltip-when-elided="true" name="ListItemName" style="margin-right: 20px; color: rgb(255, 255, 255); font-size: 18px;" />
+        <ui:Label tabindex="-1" text="22/29" display-tooltip-when-elided="true" name="Score" style="color: rgb(255, 255, 255); font-size: 16px;" />
+        <ui:VisualElement name="OtherIcon" style="width: 20px; height: 20px; margin-right: 20px; background-image: resource(&apos;img/cup&apos;);" />
+        <ui:Label tabindex="-1" text="Reward: 300" display-tooltip-when-elided="true" name="Reward" style="font-size: 16px; color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/11_CustomControls/Resources/Stylesheet_StarControl.uss?fileID=7433441132597879392&amp;guid=23ffcc411ccf9b04b81d7fddaf3dbf3d&amp;type=3#Stylesheet_StarControl" />
+    <Section_CustomControls.StarControl stars="3" />
+</ui:UXML>

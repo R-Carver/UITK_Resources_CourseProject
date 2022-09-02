@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/12_Manipulators/Resources/Stylesheet_Tooltip.uss?fileID=7433441132597879392&amp;guid=be021a8c5db11b94c87cf2a9f1c4ac64&amp;type=3#Stylesheet_Tooltip" />
+    <Section_Manipulators.Tooltip />
+</ui:UXML>

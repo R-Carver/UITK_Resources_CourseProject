@@ -1,0 +1,30 @@
+.container {
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(176, 154, 154, 0);
+    height: 50px;
+    width: 200px;
+    flex-direction: row;
+}
+
+.outerStar {
+    width: 22px;
+    height: 22px;
+    background-color: rgba(118, 118, 118, 0);
+    align-items: center;
+    justify-content: center;
+    background-image: resource('Star_grey');
+    -unity-background-image-tint-color: rgb(125, 125, 125);
+}
+
+.innerStar {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(219, 167, 24, 0);
+    background-image: resource('Star_gold');
+    -unity-background-image-tint-color: rgb(255, 176, 0);
+}
